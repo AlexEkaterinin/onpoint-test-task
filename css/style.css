@@ -12,7 +12,7 @@ body {
 }
 
 @font-face {
-	font-family: "GothamPro";
+	font-family: "GothamPro", sans-serif;
 	src: url("../fonts/GothaProReg.woff");
 }
 
@@ -99,7 +99,7 @@ body {
 
 	font-size: 50px;
 	font-weight: normal;
-	font-family: "GothamPro";
+	font-family: "GothamPro", sans-serif;
 }
 
 .slide1 p[class^="caption"] {
@@ -190,7 +190,7 @@ body {
 	padding-left: 400px;
 	padding-top: 15px;
 
-	font-family: "GothamPro";
+	font-family: "GothamPro", sans-serif;
 	font-size: 15px;
 	color: #ffffff;
 
@@ -240,7 +240,7 @@ body {
 
 	font-size: 50px;
 	font-weight: normal;
-	font-family: "GothamPro";
+	font-family: "GothamPro", sans-serif;
 }
 
 .slide2 .slide-down-slide p {
@@ -261,6 +261,7 @@ body {
 	position: relative;
 
 	background-color: #0c1446; 
+	background: url("../img/slide3-bg.png") no-repeat 0 0;
 
 	font-family: "GothamPro", sans-serif;
 	color: #ffffff;	
@@ -268,10 +269,6 @@ body {
 	white-space: nowrap;
 	vertical-align: top;
 	font-size: 0;
-}
-
-.slide h3 {
-
 }
 
 .range-slide {
@@ -322,6 +319,7 @@ body {
 
 	display: flex;
 	justify-content: space-between;
+	z-index: 2;
 }
 
 .slider-point-item {
@@ -336,6 +334,12 @@ body {
 .slide3-container {
 	width: 3072px;
 	height: 768px;
+
+	transition: transform 0.5s;
+}
+
+.show-item1 {
+	transform: translateX(0);
 }
 
 .show-item2 {
@@ -362,6 +366,7 @@ body {
 	margin: 0;
 
 	font-size: 30px;
+	font-weight: normal;
 }
 
 .slide3-item1 {
@@ -369,8 +374,7 @@ body {
 		url("../img/block3-ice1.png") no-repeat 0 15%,
 		url("../img/block3-ice2.png") no-repeat 19% 100%,
 		url("../img/block3-ice3.png") no-repeat 100% 32%,
-		url("../img/block3-info.png") no-repeat 0 -20px,
-		url("../img/slide3-bg.png") no-repeat 0 0;
+		url("../img/block3-info.png") no-repeat 0 -20px;
 }
 
 .slide3-item2 {
@@ -378,8 +382,7 @@ body {
 		url("../img/block2-ice1.png") no-repeat 5% 36%,
 		url("../img/block2-ice2.png") no-repeat 48% 13%,
 		url("../img/block2-ice3.png") no-repeat 100% 100%,
-		url("../img/block2-info.png") no-repeat 0 0,
-		url("../img/slide3-bg.png") no-repeat 0 0;
+		url("../img/block2-info.png") no-repeat 0 0;
 }
 
 .slide3-item3 {
@@ -387,6 +390,5 @@ body {
 		url("../img/block1-ice1.png") no-repeat 3% 98%,
 		url("../img/block1-ice2.png") no-repeat 73% 34%,
 		url("../img/block1-ice3.png") no-repeat 92% 15%,
-		url("../img/block1-info.png") no-repeat 0 0,
-		url("../img/slide3-bg.png") no-repeat 0 0;
+		url("../img/block1-info.png") no-repeat 0 0;
 }
