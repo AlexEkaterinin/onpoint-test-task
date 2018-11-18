@@ -309,7 +309,7 @@ body {
 	opacity: 1;
 }
 
-.slider-points {
+.slider-date {
 	width: 650px;
 	height: 20px;
 
@@ -322,7 +322,7 @@ body {
 	z-index: 2;
 }
 
-.slider-point-item {
+.slider-date-item {
 	margin: 0;
 	display: block;
 	width: 52px;
